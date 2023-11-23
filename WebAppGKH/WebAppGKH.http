@@ -1,0 +1,6 @@
+@WebAppGKH_HostAddress = http://localhost:5185
+
+GET {{WebAppGKH_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
