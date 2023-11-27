@@ -4,7 +4,7 @@ using WebApp_GKH;
 var builder = WebApplication.CreateBuilder(args);
 
 // добавляем контекст DatabaseContext в качестве сервиса в приложение
-builder.Services.AddDbContext<ApplicationContext>();
+builder.Services.AddDbContext<ApplicationDbContext>();
 
 // Add services to the container.
 

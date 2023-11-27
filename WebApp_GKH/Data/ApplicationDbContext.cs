@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.EntityFrameworkCore;
 
-public class ApplicationContext : DbContext
+public class ApplicationDbContext : DbContext
 {
    // public DbSet<User> Users { get; set; } = null!;
 
-    public ApplicationContext()
+    public ApplicationDbContext()
     {
         Database.EnsureCreated();
     }
