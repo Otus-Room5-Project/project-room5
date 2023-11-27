@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets"
+    },
+    "postgresql1": {
+      "type": "postgresql",
+      "connectionId": "Server=45.143.93.41;Username=edu;Database=db_edu",
+      "dynamicId": null
+    }
+  }
+}
