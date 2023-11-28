@@ -1,44 +1,43 @@
-using Microsoft.EntityFrameworkCore;
-using WebApp_GKH;
-using System;
-using System.Linq;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // add context DatabaseContext as a service
 builder.Services.AddDbContext<ApplicationDbContext>();
 
-// получение данных
-using (ApplicationDbContext db = new ApplicationDbContext())
-{
-    // получаем объекты из бд и выводим на консоль
-    var users = db.Users.ToList();
-    Console.WriteLine("Users list:");
-    foreach (User u in users)
-    {
-        Console.WriteLine($"{u.Id}.{u.Name} - {u.Age}");
-    }
-}
+builder.Services.AddControllersWithViews();
 // Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+//builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseDeveloperExceptionPage();
+}
+else
+{
+    app.UseExceptionHandler("/Home/Error");
+   
+    app.UseHsts();
 }
 
-app.UseHttpsRedirection();
 
-app.UseAuthorization();
+app.UseHttpsRedirection();
+app.UseStaticFiles();
 
 app.MapControllers();
+app.UseRouting();
+app.UseAuthorization();
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}");
+});
 
 app.Run();
