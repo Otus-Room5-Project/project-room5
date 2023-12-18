@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace WebApp_GKH.DTO
+namespace CommonLib.DTO
 {
     public class Login
     {

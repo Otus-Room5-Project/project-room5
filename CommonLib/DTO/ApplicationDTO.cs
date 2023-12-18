@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using WebApp_GKH.Models;
 
-namespace WebApp_GKH.DTO
+namespace CommonLib.DTO
 {
 
     public class ApplicationDTO

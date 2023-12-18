@@ -1,9 +1,9 @@
-﻿namespace WebApp_GKH.Models
+﻿namespace CommonLib.Classes
 {
 
     public class Application
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public Guid Status { get; set; }
@@ -18,7 +18,6 @@
 
         public Application(string name, string description, Guid userId, Guid typeId)
         {
-            Id = Guid.NewGuid();
             Name = name;
             Description = description;
             //Status = Id Создана; // Id ApplicationStatus;
@@ -28,7 +27,6 @@
 
         public Application()
         {
-            Id = Guid.NewGuid();
             //Status = Id Создана; // Id ApplicationStatus;
             DateCreate = DateTime.Now;
         }

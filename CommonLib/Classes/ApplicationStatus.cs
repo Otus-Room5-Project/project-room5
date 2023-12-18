@@ -1,4 +1,4 @@
-﻿namespace WebApp_GKH.Models
+﻿namespace CommonLib.Classes
 {
     /// <summary>
     /// Создана
@@ -13,7 +13,7 @@
     public class ApplicationStatus
     {
 
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
     }
 }

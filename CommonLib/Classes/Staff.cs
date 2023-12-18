@@ -1,10 +1,10 @@
 ﻿using WebApp_GKH.Helpers;
 
-namespace WebApp_GKH.Models
+namespace CommonLib.Classes
 {
     public class Staff
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string FirstName { get; set; }
         public string SecondName { get; set; }
         public UserType Type { get; set; }
@@ -18,7 +18,6 @@ namespace WebApp_GKH.Models
 
         public Staff(string name, string surname, string login, string password, string dateOfBirth, string email, string phone)
         {
-            Id = Guid.NewGuid();
             FirstName = name;
             SecondName = surname;
             //Type = Id Работника; // Id UserType
@@ -32,7 +31,6 @@ namespace WebApp_GKH.Models
 
         public Staff()
         {
-            Id = Guid.NewGuid();
             //Type = Id Работника; // Id UserType
             DateRegistration = DateTime.Now;
         }

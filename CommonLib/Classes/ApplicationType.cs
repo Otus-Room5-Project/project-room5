@@ -1,4 +1,4 @@
-﻿namespace WebApp_GKH.Models
+﻿namespace CommonLib.Classes
 {
     /// <summary>
     /// Жалоба,
@@ -8,7 +8,7 @@
     public class ApplicationType
     {
 
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
     }
 }

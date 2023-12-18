@@ -1,11 +1,11 @@
-﻿namespace WebApp_GKH.Models
+﻿namespace CommonLib.Classes
 {
     /// <summary>
     /// Администратор, Работник, Житель
     /// </summary>
     public class UserType
     {
-        public Guid Id { get; set; }
-        public string? Name { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }

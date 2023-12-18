@@ -1,4 +1,4 @@
-﻿namespace WebApp_GKH.Models
+﻿namespace CommonLib.Classes
 {
     /// <summary>
     /// 
@@ -7,7 +7,7 @@
     /// </summary>
     public class Department
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
     }
 }

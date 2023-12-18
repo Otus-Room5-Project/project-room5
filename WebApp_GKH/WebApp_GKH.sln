@@ -5,6 +5,10 @@ VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp_GKH", "WebApp_GKH.csproj", "{92DC54A1-7747-4637-9539-EEB60D66BFAF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommonFiles", "CommonFiles", "{9C41B3E8-ABD6-4E6B-98F3-0F9E2DFC0BDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLib", "..\CommonLib\CommonLib.csproj", "{0077857F-1E4D-4F58-952B-FB16BFBDEED4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{92DC54A1-7747-4637-9539-EEB60D66BFAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92DC54A1-7747-4637-9539-EEB60D66BFAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92DC54A1-7747-4637-9539-EEB60D66BFAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0077857F-1E4D-4F58-952B-FB16BFBDEED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0077857F-1E4D-4F58-952B-FB16BFBDEED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0077857F-1E4D-4F58-952B-FB16BFBDEED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0077857F-1E4D-4F58-952B-FB16BFBDEED4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0077857F-1E4D-4F58-952B-FB16BFBDEED4} = {9C41B3E8-ABD6-4E6B-98F3-0F9E2DFC0BDD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {994E801B-1AB7-4CDB-9EC0-DA704281E335}

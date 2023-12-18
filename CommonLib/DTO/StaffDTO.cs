@@ -1,15 +1,15 @@
-﻿using WebApp_GKH.Models;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace WebApp_GKH.DTO
+namespace CommonLib.DTO
 {
-    public class ResidentDTO
+    public class StaffDTO
     {
         [Required(ErrorMessage = "Не указано Имя")]
         [StringLength(30, MinimumLength = 2, ErrorMessage = "В имени должно быть не меньше 2 букв")]
         [Display(Name = "Имя")]
         public string FirstName { get; set; }
 
+        [Required(ErrorMessage = "Не указана Фамилия")]
         [Display(Name = "Фамилия")]
         public string SecondName { get; set; }
 
@@ -26,10 +26,5 @@ namespace WebApp_GKH.DTO
         [Display(Name = "Телефон")]
         public string Phone { get; set; }
 
-        [Required(ErrorMessage = "Не указан Адрес")]
-        [Display(Name = "Адрес")]
-        public Address Address { get; set; }
-
     }
-
 }
